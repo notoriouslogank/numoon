@@ -20,7 +20,7 @@ mkdir -p ~/.config/neofetch/ && mv $NeofetchConfig ~/.config/neofetch/config.con
 # /etc/ssh/
 SSHConfig="files/SSH_CONFIG"
 mv $SSHConfig /etc/ssh/ssh_config
-figlet $HOST >>file.txt
+figlet $HOST >file.txt
 mv file.txt /etc/ssh/banner
 
 # .tmux.conf
