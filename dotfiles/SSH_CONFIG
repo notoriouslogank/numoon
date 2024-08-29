@@ -1,0 +1,17 @@
+
+Include /etc/ssh/ssh_config.d/*.conf
+
+   PasswordAuthentication yes
+   IdentityFile ~/.ssh/id_rsa
+   UserKnownHostsFile ~/.ssh/known_hosts.d/%k
+   SendEnv LANG LC_*
+   HashKnownHosts yes
+   GSSAPIAuthentication yes
+
+Host spine
+Hostname 57.135.69.152
+Port 88
+
+Host mimir
+Hostname 24.254.180.161
+Port 888
