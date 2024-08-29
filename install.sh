@@ -11,7 +11,7 @@ sudo cp ~/.tmux.conf ./backups/tmux.conf
 
 # installs
 sudo apt update && sudo apt full-upgrade -y
-sudo apt install lsd tmux glances ranger toilet bpytop net-tools neofetch
+sudo apt install -y lsd tmux glances ranger toilet bpytop net-tools neofetch zsh figlet
 
 # .configs
 NeofetchConfig="files/config/NEOFETCH.conf"
@@ -20,7 +20,7 @@ mkdir -p .config/neofetch/ && mv $NeofetchConfig .config/neofetch/config.conf
 # /etc/ssh/
 SSHConfig="files/SSH_CONFIG"
 mv $SSHConfig /etc/ssh/ssh_config
-
+figlet -f slant $HOST >>file.txt
 # .tmux.conf
 TmuxConfig="files/TMUX.conf"
 mv $TmuxConfig ~/.tmux.conf
